@@ -1,0 +1,73 @@
+Checks: >
+  readability-*,
+  performance-*,
+  portability-*,
+  clang-analyzer-*,
+  hicpp-*,
+  misc-*,
+  mpi-*,
+  bugprone-*,
+  cert-*,
+  concurrency-*,
+  cppcoreguidelines-*,
+  modernize-*
+
+WarningsAsErrors: 'readability-identifier-naming'
+
+CheckOptions:
+  - key: readability-identifier-naming.ClassCase
+    value: CamelCase
+
+  - key: readability-identifier-naming.StructCase
+    value: CamelCase
+
+  - key: readability-identifier-naming.UnionCase
+    value: CamelCase
+
+  - key: readability-identifier-naming.EnumCase
+    value: CamelCase
+
+  - key: readability-identifier-naming.EnumConstantCase
+    value: CamelCase
+
+  - key: readability-identifier-naming.FunctionCase
+    value: camelBack
+
+  - key: readability-identifier-naming.FunctionParameterCase
+    value: camelBack
+
+  - key: readability-identifier-naming.VariableCase
+    value: camelBack
+
+  - key: readability-identifier-naming.GlobalConstantCase
+    value: UPPER_CASE
+
+  - key: readability-identifier-naming.NamespaceCase
+    value: lower_case
+
+  - key: readability-identifier-naming.MacroDefinitionCase
+    value: UPPER_CASE
+
+  - key: readability-identifier-naming.ClassMemberCase
+    value: camelBack
+
+  - key: readability-identifier-naming.StaticConstantCase
+    value: UPPER_CASE
+
+  - key: readability-identifier-naming.ClassConstantCase
+    value: CamelCase
+
+  - key: readability-identifier-naming.StaticVariableCase
+    value: camelBack
+
+  - key: readability-identifier-naming.TemplateParameterCase
+    value: CamelCase
+
+  - key: readability-identifier-naming.PrivateMemberPrefix
+    value: 'm_'
+
+  - key: readability-identifier-naming.ProtectedMemberPrefix
+    value: 'm_'
+
+  - key: readability-identifier-naming.ClassMemberPrefix
+    value: 'm_'
