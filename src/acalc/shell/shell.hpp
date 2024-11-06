@@ -15,5 +15,5 @@ public:
 private:
   std::string m_prompt;
   // m_command_functions was shorten to m_cf for easier usage
-  std::map<std::string, std::function<void(void)>> m_cf;
+  std::map<std::string, std::function<void()>> m_cf;
 };

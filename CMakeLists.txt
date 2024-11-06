@@ -8,8 +8,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 add_executable(acalc
   src/acalc/main.cpp
   src/acalc/shell/shell.cpp
+  src/include/amp/amp.cpp
 )
 
 target_include_directories(acalc PRIVATE
   ${PROJECT_SOURCE_DIR}/src/acalc/shell
+  ${PROJECT_SOURCE_DIR}/src/include/amp
+  ${PROJECT_SOURCE_DIR}/src/include/amp/external
 )

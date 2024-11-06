@@ -10,7 +10,8 @@ Shell::Shell(std::string prompt) : m_prompt(std::move(prompt)) {
               << "Use the @ to run a command, for example if you want to exit type '@exit'." << '\n'
               << "Documentation: Coming soon!" << '\n';
   };
-};
+  m_cf["clear"] = []() { std::cout << "\033[2J\033[1;1H"; };
+}
 
 void Shell::prompt() { std::cout << m_prompt << ' '; }
 
